@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aman.bramdehart.moviesk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3136435737091654~2057566095"/>
+        <activity
+            android:name="aman.bramdehart.moviesk.activities.TrendingActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="aman.bramdehart.moviesk.activities.MovieDetailActivity"
+            android:label="@string/title_activity_book_detail" />
+        <activity
+            android:name="aman.bramdehart.moviesk.activities.SearchActivity"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name="aman.bramdehart.moviesk.activities.FavoritesActivity"
+            android:label="@string/title_activity_favorites" />
+        <activity android:name="aman.bramdehart.moviesk.activities.SearchResultsActivity" />
+    </application>
+
+</manifest>
